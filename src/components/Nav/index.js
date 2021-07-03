@@ -20,10 +20,11 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/">
+        <a data-testid="link" href="https://unity7.github.io/portfolio/">
           <span role="img" aria-label="camera">
             {" "}
-          </span>{" "}
+          </span>
+          {""}
           Bay Bui
         </a>
       </h2>
