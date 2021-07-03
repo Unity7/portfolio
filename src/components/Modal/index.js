@@ -1,7 +1,7 @@
 import React from "react";
 
 const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, url, category, index } = currentPhoto;
+  const { name, description, url, category, repo, index } = currentPhoto;
 
   return (
     <div className="modalBackdrop">
@@ -14,6 +14,10 @@ const Modal = ({ onClose, currentPhoto }) => {
         <p>
           <a href={url} target="_blank" rel="noreferrer">
             {url}
+          </a>
+          <br></br>
+          <a href={repo} target="_blank" rel="noreferrer">
+            {repo}
           </a>
         </p>
         <p>{description}</p>

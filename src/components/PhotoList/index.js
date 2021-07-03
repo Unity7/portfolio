@@ -11,6 +11,7 @@ const PhotoList = ({ category }) => {
       category: "portfolio",
       description: "A simple calculator built with CSS and Javascript",
       url: "https://unity7.github.io/calculator/",
+      repo: "https://github.com/Unity7/calculator",
     },
     {
       name: "Perfect Cocktail",
@@ -18,12 +19,14 @@ const PhotoList = ({ category }) => {
       description:
         "An application that allows users to look up cocktail recipes built with Javascript and Fetch API",
       url: "https://unity7.github.io/cocktail/",
+      repo: "https://github.com/Unity7/cocktail",
     },
     {
       name: "Run Buddy",
       category: "portfolio",
       description: "A simple landing page built with HTML and CSS",
       url: "https://unity7.github.io/run-buddy/",
+      repo: "https://github.com/Unity7/run-buddy",
     },
     {
       name: "Chirp",
@@ -31,6 +34,7 @@ const PhotoList = ({ category }) => {
       description:
         "A social media application that allows users to share their ideas and thoughts. Built with HTML, Javascript, Materialize, and NodeJS",
       url: "https://chirp-uclabootcamp.herokuapp.com/",
+      repo: "https://github.com/Unity7/chirp-app",
     },
     {
       name: "extravert",
@@ -38,6 +42,7 @@ const PhotoList = ({ category }) => {
       description:
         "An application that allows users to search for events and flights by city. The application is built with HTML, CSS, Javascript, and Bulma",
       url: "https://unity7.github.io/EXTRAvert/",
+      repo: "https://github.com/Unity7/EXTRAvert",
     },
   ]);
 
