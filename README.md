@@ -9,8 +9,6 @@ This SPA showcases the work done by Bay Bui.
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-  https://drive.google.com/file/d/1IgDVSjjOuOx3z5Zy0VL20IaZL97eYDFk/view
-  https://drive.google.com/file/d/1dy3qDusuHaeDLzRh4w7x09jYQY3Bkf2r/view
 
 ## Installation
 
