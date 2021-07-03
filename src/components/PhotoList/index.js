@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Modal from '../Modal';
+import React, { useState } from "react";
+import Modal from "../Modal";
 
 const PhotoList = ({ category }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -7,99 +7,37 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: 'Grocery aisle',
-      category: 'commercial',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      name: "Calculator",
+      category: "portfolio",
+      description: "A simple calculator built with CSS and Javascript",
+      url: "https://unity7.github.io/calculator/",
     },
     {
-      name: 'Grocery booth',
-      category: 'commercial',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      name: "Perfect Cocktail",
+      category: "portfolio",
+      description:
+        "An application that allows users to look up cocktail recipes built with Javascript and Fetch API",
+      url: "https://unity7.github.io/cocktail/",
     },
     {
-      name: 'Building exterior',
-      category: 'commercial',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      name: "Run Buddy",
+      category: "portfolio",
+      description: "A simple landing page built with HTML and CSS",
+      url: "https://unity7.github.io/run-buddy/",
     },
     {
-      name: 'Restaurant table',
-      category: 'commercial',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      name: "Chirp",
+      category: "portfolio",
+      description:
+        "A social media application that allows users to share their ideas and thoughts. Built with HTML, Javascript, Materialize, and NodeJS",
+      url: "https://chirp-uclabootcamp.herokuapp.com/",
     },
     {
-      name: 'Cafe interior',
-      category: 'commercial',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Cat green eyes',
-      category: 'portraits',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Green parrot',
-      category: 'portraits',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Yellow macaw',
-      category: 'portraits',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Pug smile',
-      category: 'portraits',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Pancakes',
-      category: 'food',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Burrito',
-      category: 'food',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Scallop pasta',
-      category: 'food',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Burger',
-      category: 'food',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Fruit bowl',
-      category: 'food',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Green river',
-      category: 'landscape',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Docks',
-      category: 'landscape',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Panoramic village by sea',
-      category: 'landscape',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Domestic landscape',
-      category: 'landscape',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Park bench',
-      category: 'landscape',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      name: "extravert",
+      category: "portfolio",
+      description:
+        "An application that allows users to search for events and flights by city. The application is built with HTML, CSS, Javascript, and Bulma",
+      url: "https://unity7.github.io/EXTRAvert/",
     },
   ]);
 
@@ -112,7 +50,9 @@ const PhotoList = ({ category }) => {
 
   return (
     <div>
-      {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
+      {isModalOpen && (
+        <Modal onClose={toggleModal} currentPhoto={currentPhoto} />
+      )}
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
